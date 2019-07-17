@@ -9,6 +9,7 @@ As their data engineer, I was tasked with building an ETL pipeline that extracts
 I worked with two datasets that reside in S3. Here are the S3 links for each:
 
 Song data: s3://udacity-dend/song_data
+
 Log data: s3://udacity-dend/log_data
 
 ### Song Dataset
