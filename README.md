@@ -30,21 +30,21 @@ log_data/2018/11/2018-11-13-events.json
 Using the song and event datasets, I created a star schema optimized for queries on song play analysis. It consists of two staging tables, one fact table and four dimension tables. Pyspark SQL was used to create and manipulate the data. The tables are detailed below:
 
 ### Fact Table
-- TABLE NAME: songplays
+1. TABLE NAME: songplays
 - TABLE COLUMNS: songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 
 
 ### Dimension Tables
-- TABLE NAME: users
+1. TABLE NAME: users
 - TABLE COLUMNS: user_id, first_name, last_name, gender, level
 
-- TABLE NAME: songs
+2. TABLE NAME: songs
 - TABLE COLUMNS: song_id, title, artist_id, year, duration
 
-- TABLE NAME: artists  
+3. TABLE NAME: artists  
 - TABLE COLUMNS: artist_id, artist_name, artist_location, artist_latitude, artist_longitude
 
-- TABLE NAME: time
+4. TABLE NAME: time
 - TABLE COLUMNS: start_time, hour, day, week, month, year, weekday
 
 ## REPO CONTENTS
