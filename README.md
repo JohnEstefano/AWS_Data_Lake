@@ -8,9 +8,8 @@ As their data engineer, I was tasked with building an ETL pipeline that extracts
 ## Project Datasets
 I worked with two datasets that reside in S3. Here are the S3 links for each:
 
-Song data: s3://udacity-dend/song_data
-
-Log data: s3://udacity-dend/log_data
+>Song data: s3://udacity-dend/song_data
+>Log data: s3://udacity-dend/log_data
 
 ### Song Dataset
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are filepaths to two files in this dataset.
@@ -35,20 +34,17 @@ TABLE COLUMNS: songplay_id, start_time, user_id, level, song_id, artist_id, sess
 
 
 ### Dimension Tables
-TABLE NAME: users
-TABLE COLUMNS: user_id, first_name, last_name, gender, level
+>TABLE NAME: users
+>TABLE COLUMNS: user_id, first_name, last_name, gender, level
 
+>TABLE NAME: songs
+TABLE COLUMNS: song_id, title, artist_id, year, duration
 
-TABLE NAME: songs
-TABLE COLUMNS:song_id, title, artist_id, year, duration
+>TABLE NAME: artists  
+>TABLE COLUMNS: artist_id, artist_name, artist_location, artist_latitude, artist_longitude
 
-
-TABLE NAME: artists  
-TABLE COLUMNS:artist_id, artist_name, artist_location, artist_latitude, artist_longitude
-
-
-TABLE NAME: time
-start_time, hour, day, week, month, year, weekday
+>TABLE NAME: time
+>TABLE COLUMNS: start_time, hour, day, week, month, year, weekday
 
 ## REPO CONTENTS
 
